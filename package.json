@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node build/index.js",
     "watch": "tsc -p tsconfig.json -w",
-    "build": "tsc",
+    "build": "rm -rf ./build && tsc",
     "test": "nyc mocha -r ts-node/register \"tests/**/*.spec.ts\"",
     "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
   },

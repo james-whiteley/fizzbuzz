@@ -1,7 +1,9 @@
+import { RuleInterface } from '../RuleInterface';
+
 /**
  * Abstract class to define structure of Rule classes
  */
-export abstract class Rule {
+export abstract class Rule implements RuleInterface {
   // String to replace number with, where appropriate
   private _replacementString: string;
 
